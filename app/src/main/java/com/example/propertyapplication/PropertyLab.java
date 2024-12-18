@@ -118,7 +118,7 @@ public class PropertyLab {
         property1.setSuburb("Cairns");
         property1.setState("QLD");
         property1.setPostCode(4870);
-        property1.setSalePrice(200000);
+        property1.setSalePrice("200000");
         properties.add(property1);
 
         Property property2 = new Property();
@@ -126,7 +126,7 @@ public class PropertyLab {
         property2.setSuburb("Cairns");
         property2.setState("QLD");
         property2.setPostCode(4870);
-        property2.setSalePrice(350000);
+        property2.setSalePrice("350000");
         properties.add(property2);
 
         Property property3 = new Property();
@@ -134,7 +134,7 @@ public class PropertyLab {
         property3.setSuburb("Trinity Beach");
         property3.setState("QLD");
         property3.setPostCode(4870);
-        property3.setSalePrice(800000);
+        property3.setSalePrice("800000");
         properties.add(property3);
 
         Property property4 = new Property();
@@ -142,7 +142,7 @@ public class PropertyLab {
         property4.setSuburb("Cairns");
         property4.setState("QLD");
         property4.setPostCode(4870);
-        property4.setSalePrice(550000);
+        property4.setSalePrice("550000");
         properties.add(property4);
 
         Property property5 = new Property();
@@ -150,7 +150,7 @@ public class PropertyLab {
         property5.setSuburb("Earlville");
         property5.setState("QLD");
         property5.setPostCode(4870);
-        property5.setSalePrice(400000);
+        property5.setSalePrice("400000");
         properties.add(property5);
 
         return properties;

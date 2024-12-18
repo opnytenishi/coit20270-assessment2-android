@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">PropertyApplication</string>
-    <string name="property_sale_price_format">$%1$d</string>
+    <string name="property_sale_price_format">$%1$s</string>
     <string name="address_title">Address</string>
     <string name="suburb_title">Suburb</string>
     <string name="state_title">State</string>
     <string name="postcode_title">Postcode</string>
     <string name="sale_price_title">Sale Price</string>
     <string name="new_property_title">New Property</string>
+    <string name="save_title">Save</string>
+    <string name="empty_address_suburb_error">Address and Suburb fields cannot be empty.</string>
+    <string name="minimum_sale_price_error">Sale Price must be at least 1000.</string>
+    <string name="integer_sale_price_error">Sale Price must be a whole number.</string>
 </resources>

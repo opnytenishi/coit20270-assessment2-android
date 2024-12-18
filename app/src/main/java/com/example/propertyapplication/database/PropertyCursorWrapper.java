@@ -20,7 +20,7 @@ public class PropertyCursorWrapper extends CursorWrapper {
         String suburb = getString(getColumnIndex(PropertyTable.Cols.SUBURB));
         String state = getString(getColumnIndex(PropertyTable.Cols.STATE));
         int postCode = getInt(getColumnIndex(PropertyTable.Cols.POSTCODE));
-        int salePrice = getInt(getColumnIndex(PropertyTable.Cols.SALEPRICE));
+        String salePrice = getString(getColumnIndex(PropertyTable.Cols.SALEPRICE));
 
         Property property = new Property(UUID.fromString(uuidString));
         property.setAddress(address);

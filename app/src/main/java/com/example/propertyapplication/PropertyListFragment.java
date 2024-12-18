@@ -70,10 +70,9 @@ public class PropertyListFragment extends Fragment {
             mAddressTextView = (TextView) itemView.findViewById(R.id.property_full_address);
             mSalePriceTextView = (TextView) itemView.findViewById(R.id.property_sale_price);
         }
-
         @Override
         public void onClick(View view) {
-            Intent intent = PropertyPagerActivity.newIntent(getActivity(), mProperty.getId());
+            Intent intent = PropertyPagerActivity.newIntent(getActivity(), mProperty.getId(), false);
             startActivity(intent);
         }
 

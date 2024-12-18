@@ -16,15 +16,18 @@ import java.util.UUID;
 public class PropertyPagerActivity extends AppCompatActivity {
 
     private static final String EXTRA_PROPERTY_ID = "com.example.propertyapplication.property_id";
+    public static final String EXTRA_NEW_PROPERTY = "com.example.propertyapplication.new_property";
 
     private ViewPager mViewPager;
     private List<Property> mProperties;
 
-    public static Intent newIntent(Context packageContext, UUID crimeId) {
+    public static Intent newIntent(Context packageContext, UUID propertyId, boolean isNewProperty) {
         Intent intent = new Intent(packageContext, PropertyPagerActivity.class);
-        intent.putExtra(EXTRA_PROPERTY_ID, crimeId);
+        intent.putExtra(EXTRA_PROPERTY_ID, propertyId);
+        intent.putExtra(EXTRA_NEW_PROPERTY, isNewProperty);
         return intent;
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

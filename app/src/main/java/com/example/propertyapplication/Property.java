@@ -9,7 +9,7 @@ public class Property {
     private String mSuburb;
     private String mState;
     private int mPostCode;
-    private int mSalePrice;
+    private String mSalePrice;
 
     public Property() {
         this(UUID.randomUUID());
@@ -55,11 +55,11 @@ public class Property {
         mPostCode = postCode;
     }
 
-    public int getSalePrice() {
+    public String getSalePrice() {
         return mSalePrice;
     }
 
-    public void setSalePrice(int salePrice) {
+    public void setSalePrice(String salePrice) {
         mSalePrice = salePrice;
     }
 }
