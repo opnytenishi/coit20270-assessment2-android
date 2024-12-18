@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PropertyApplication</string>
+    <string name="property_sale_price_format">$%1$d</string>
 </resources>
