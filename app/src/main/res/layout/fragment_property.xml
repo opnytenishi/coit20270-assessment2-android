@@ -2,36 +2,84 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="20dp"
     android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
-        android:layout_height="136dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:text="@string/address_title"
+        android:background="@null"
+        android:textColor="#807E7E" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/property_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#020000" />
 
-            <TextView
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="rr" />
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suburb_title"
+        android:background="@null"
+        android:textColor="#807E7E" />
 
-            <EditText
-                android:id="@+id/crime_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="ee" />
+    <EditText
+        android:id="@+id/property_suburb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#020000" />
 
-        </LinearLayout>
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state_title"
+        android:background="@null"
+        android:textColor="#807E7E" />
 
+    <EditText
+        android:id="@+id/property_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#020000" />
 
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/postcode_title"
+        android:background="@null"
+        android:textColor="#807E7E" />
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/property_postcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#020000" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sale_price_title"
+        android:background="@null"
+        android:textColor="#807E7E" />
+
+    <EditText
+        android:id="@+id/property_sale_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#020000" />
+
+    <Button
+        android:id="@+id/new_property_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/new_property_title" />
 
 </LinearLayout>

@@ -30,6 +30,14 @@ public class PropertyLab {
     private PropertyLab(Context context) {
         mContext = context.getApplicationContext();
         mDatabase = new PropertyBaseHelper(mContext).getWritableDatabase();
+
+        List<Property> properties = getProperties();
+        if (properties.isEmpty()) {
+            properties = getDummyProperties();
+            for (Property prop : properties) {
+                addProperty(prop);
+            }
+        }
     }
 
     public void addProperty(Property c) {
@@ -48,9 +56,9 @@ public class PropertyLab {
             }
         }
 
-        if (properties.isEmpty()) {
-            properties.addAll(getDummyProperties());
-        }
+//        if (properties.isEmpty()) {
+//            properties.addAll(getDummyProperties());
+//        }
         return properties;
     }
 
